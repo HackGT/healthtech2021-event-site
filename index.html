@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- TODO insert preview meta tags
         -->
         <!-- TODO insert favicon
         -->
         <title>HealthTech 2021</title>
+
+        <!-- fonts
+        -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
         <link href="./style.css" rel="stylesheet" />
     </head>
 
     <body>
-        <!-- TODO nav
-        -->
-
         <nav>
             <ul>
                 <li><a href="#about">about</a></li>
                 <li><a href="#tracks">tracks</a></li>
                 <li><a href="#schedule">schedule</a></li>
                 <li><a href="#faq">faq</a></li>
-                <li><a href="#bonus">insert health image</a></li>
+                <li><a href="#bonus">icon</a></li>
             </ul>
         </nav>
 
-        <!-- TODO splash
-        -->
         <section id="splash">
-            <h1>HealthTech</h1>
-            <span>presented by HackGT</span> 
+            <div class="splash-txt">
+                <h1>HEALTHTECH</h1>
 
-            <div>
-                <div>Georgia Tech</div>
-                <div>Instructional Center</div>
-                <time datetime="2021-03-12">March 12-13</time>
+                <div class="splash-align-end">
+                    <div class="splash-placeholder"></div>
+                    <span class="splash-txt-sub">presented by HackGT</span>
+                </div>
+
+                <div class="splash-align-end">
+                    <div class="splash-placeholder"></div>
+                    <div class="splash-txt-details">
+                        <div>Georgia Tech</div>
+                        <div>Instructional Center</div>
+                        <time datetime="2021-03-12">March 12-13</time>
+                    </div>
+                </div>
+
+                <div id="register-btn">
+                    <a href="">Apply Now</a>
+                </div>
             </div>
-
-            <a href="">Apply Now</a>
         </section>
 
         <section id="about">
             <h2>about</h2>
             <p>
-                HackGT is proud to present HealthTech- a Hackathon centered
-                around the wellbeing of individuals. Participants of this event
-                will find solutions to a variety of problems that affect
-                everyday health. We've partnered with organizations and
+                HackGT is proud to present
+                <span class="accent bold">HealthTech</span> - a Hackathon
+                centered around the wellbeing of individuals. Participants of
+                this event will find solutions to a variety of problems that
+                affect everyday health. We've partnered with organizations and
                 nonprofits to create custom challenges that you can
                 tackle! Think you have what it takes to help millions of people
                 around the world? Apply today!
@@ -53,66 +72,134 @@
 
         <section id="tracks">
             <h2>tracks</h2>
-            <div>
-                tracks images will go here
+            <div class="showcase">
+                <div>
+                    <img src="./assets/mentalHealth.png" />
+                    <div class="bold">Mental Health</div>
+                </div>
+                <div>
+                    <img src="./assets/inpatientHealth.png" />
+                    <div class="bold">Inpatient Health</div>
+                </div>
+                <div>
+                    <img src="./assets/fitnessNutrition.png" />
+                    <div class="bold">Fitness & Nutrition</div>
+                </div>
+                <div>
+                    <img src="./assets/womensHealth.png" />
+                    <div class="bold">Women's Health</div>
+                </div>
+                <div>
+                    <img src="./assets/ruralHealth.png" />
+                    <div class="bold">Global/Rural Health</div>
+                </div>
             </div>
-            <h3>Mental Health</h3>
-            <p>
-                Mental health problems are some of the most common issues that
-                are present throughout the world today. These problems can range
-                from dealing with stress to certain disorders that affect daily
-                lifestyles. Within this track, you will design solutions that
-                improve the lifestyle of those affected by mental health issues.
-            </p>
+        </section>
 
-            <h3>Inpatient Health</h3>
-            <p>
-                It is essential that inpatients have the best possible
-                experience during their stay in hospitals. In order to achieve
-                this, hospitals must maintain the upmost standards in terms of
-                sanitation, efficiency, and service. Participants within this
-                track will design solutions that help keep these standards in
-                the hospital.
-            </p>
+        <section class="tracks-extra">
+            <div class="description">
+                <div>
+                    <h3>Mental Health</h3>
+                    <p>
+                        Mental health problems are some of the most common
+                        issues that are present throughout the world today.
+                        These problems can range from dealing with stress to
+                        certain disorders that affect daily lifestyles. Within
+                        this track, you will design solutions that improve the
+                        lifestyle of those affected by mental health issues.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/mentalHealth.png" />
+                </div>
+            </div>
+        </section>
 
-            <h3>Fitness & Nutrition</h3>
-            <p>
-                Maintaining a fitness routine is essential to living a healthy
-                life. What's equally as important is that individuals must fuel
-                their body with the right nutrients in order to keep their
-                bodies in optimal shape; however, many people today face
-                obstacles that keep them from receiving the necessary food.
-                Within this track, participants will find ways to create a food
-                and nutrition narrative: a new paradigm or a remaking of old
-                ones that prioritizes and respects the central position of
-                healthy, tasty, fair food in the human experience.
-            </p>
-
-            <h3>Women's Health</h3>
-            <p>
-                Women's health is often stigmatized and overlooked in numerous
-                fields of health. They require different medical needs from men,
-                and the PCOS Awareness organization is looking to bridge the gap
-                and raise awareness. Participants in this track will help find
-                ways to raise this awareness and to look for better ways to
-                serve women's medical needs.
-            </p>
-
-            <h3>Global/Rural Health</h3>
-            <p>
-                Access to healthcare is limited in rural and less developed
-                areas around the country and the world. It is important to
-                expand access to quality healthcare in these areas, which could
-                mean developing new technologies and infrastructure to expand
-                the range of current medical services. Participants within this
-                track will design solutions that increase access to healthcare,
-                and/or find ways to make healthcare more affordable.
-            </p>
+        <section class="tracks-extra">
+            <div class="description">
+                <div>
+                    <h3>Inpatient Health</h3>
+                    <p>
+                        It is essential that inpatients have the best possible
+                        experience during their stay in hospitals. In order to
+                        achieve this, hospitals must maintain the upmost
+                        standards in terms of sanitation, efficiency, and
+                        service. Participants within this track will design
+                        solutions that help keep these standards in the
+                        hospital.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/inpatientHealth.png" />
+                </div>
+            </div>
+        </section>
+        <section class="tracks-extra">
+            <div class="description">
+                <div>
+                    <h3>Fitness & Nutrition</h3>
+                    <p>
+                        Maintaining a fitness routine is essential to living a
+                        healthy life. What's equally as important is that
+                        individuals must fuel their body with the right
+                        nutrients in order to keep their bodies in optimal
+                        shape; however, many people today face obstacles that
+                        keep them from receiving the necessary food. Within this
+                        track, participants will find ways to create a food and
+                        nutrition narrative: a new paradigm or a remaking of old
+                        ones that prioritizes and respects the central position
+                        of healthy, tasty, fair food in the human experience.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/fitnessNutrition.png" />
+                </div>
+            </div>
+        </section>
+        <section class="tracks-extra">
+            <div class="description">
+                <div>
+                    <h3>Women's Health</h3>
+                    <p>
+                        Women's health is often stigmatized and overlooked in
+                        numerous fields of health. They require different
+                        medical needs from men, and the PCOS Awareness
+                        organization is looking to bridge the gap and raise
+                        awareness. Participants in this track will help find
+                        ways to raise this awareness and to look for better ways
+                        to serve women's medical needs.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/womensHealth.png" />
+                </div>
+            </div>
+        </section>
+        <section class="tracks-extra">
+            <div class="description">
+                <div>
+                    <h3>Global/Rural Health</h3>
+                    <p>
+                        Access to healthcare is limited in rural and less
+                        developed areas around the country and the world. It is
+                        important to expand access to quality healthcare in
+                        these areas, which could mean developing new
+                        technologies and infrastructure to expand the range of
+                        current medical services. Participants within this track
+                        will design solutions that increase access to
+                        healthcare, and/or find ways to make healthcare more
+                        affordable.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/ruralHealth.png" />
+                </div>
+            </div>
         </section>
 
         <section id="schedule">
             <h1>schedule</h1>
-            <p>coming soon</p>
+            <div>coming soon</div>
         </section>
 
         <section id="faq">
@@ -120,18 +207,18 @@
             <ul>
                 <li>
                     <div class="question">What is a hackathon?</div>
-                    <div class="answer">
+                    <p>
                         A hackathon is an invention marathon where people work
                         in groups to build hardware and software projects
                         ranging from simple websites to motion controlled
                         drones. At this hackathon, you will be working in teams
                         of up to four people to create projects within our
-                        tracks [insert hyperlink of tracks].
-                    </div>
+                        <a href="#tracks">tracks</a>
+                    </p>
                 </li>
                 <li>
                     <div class="question">What is HealthTech?</div>
-                    <div class="answer">
+                    <p>
                         Health Tech is modeled after the tech industry’s
                         “hackathon” and aims to foster collaboration among
                         students from various disciplines by uniting them for
@@ -140,74 +227,99 @@
                         problems — from mental health to geriatrics – faced by
                         these groups in order to make a tangible impact within
                         in their community.
-                    </div>
+                    </p>
                 </li>
                 <li>
                     <div class="question">What if I don't have a team?</div>
-                    <div class="answer">
+                    <p>
                         We will have a virtual mixer at the start of the event
                         to help you find a team! Additionally, we will be making
                         a Facebook group for attendees to share their ideas and
                         find a team before the event.
-                    </div>
+                    </p>
                 </li>
                 <li>
                     <div class="question">How long is HealthTech?</div>
-                    <div class="answer">
+                    <p>
                         Health Tech will begin Saturday, March 13, 2021 and will
                         end Sunday, March 14, 2021.
-                    </div>
+                    </p>
                 </li>
                 <li>
                     <div class="question">Where is it?</div>
-                    <div class="answer">The event will be held virtually.</div>
+                    <p>The event will be held virtually.</p>
                 </li>
                 <li>
                     <div class="question">Is there anyting I need?</div>
-                    <div class="answer">
+                    <p>
                         Make sure to have a laptop, charger, headphones, and
                         lots of snacks.
-                    </div>
+                    </p>
                 </li>
                 <li>
                     <div class="question">Who can participate?</div>
-                    <div class="answer">
+                    <p>
                         Any student over the age of 18 is allowed to
                         participate. Teams can be up to four members - you can
                         register with your team when you apply, any time after
                         you're accepted, or create a team at the event! If you
                         are younger than 18, but a Georgia Tech student, you can
                         still participate.
-                    </div>
+                    </p>
                 </li>
                 <li>
                     <div class="question">
                         What kind of materials or hardware will be provided?
                     </div>
-                    <div class="answer">
+                    <p>
                         Unfortunately, since the event will be virtual we will
                         be unable to provide any materials or hardware, but you
                         are welcome to use anything you have access to.
-                    </div>
+                    </p>
                 </li>
             </ul>
         </section>
 
         <section id="bonus">
             <div>
-                <div>
-                    insert image here
+                <div class="quote-img">
+                    <img src="./assets/heartQuote.png"/>
                 </div>
-                <div>
-                    insert big quote here
+                <div class="quote">
+                    <div>"Wherever the art of Medicine is loved, there is also a love of Humanity"</div>
+                    <div> -- Hippocrates </div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <div>
+            <div class="social">
                 <ul>
-                    <li></li>
+                    <li>
+                        <a href="https://www.instagram.com/thehackgt/" target="_blank">
+                            <img src="./assets/insta.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/TheHackGT" target="_blank">
+                            <img src="./assets/fb.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/thehackgt" target="_blank">
+                            <img src="./assets/twitter.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/HackGT" target="_blank">
+                            <img src="./assets/github.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:hello@hack.gt" target="_blank">
+                            <img src="./assets/website.svg"/>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div>Made with love by the HackGT Team</div>
