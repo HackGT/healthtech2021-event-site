@@ -20,6 +20,7 @@ body {
 
     /* TODO remove this after testing */
     background: #10112e;
+    overflow: none;
 }
 
 /*
@@ -301,12 +302,8 @@ nav a:active {
     margin: 10%;
 }
 
-#bonus > div > div {
-    width: 50%;
-}
-
 #bonus img {
-    width: 100%;
+    width: 400px;
     height: auto;
 }
 
@@ -428,4 +425,62 @@ footer .social ul img {
     left: var(--push-to-edge);
     width: 61% !important;
     height: 100% !important;
+}
+
+/*
+ * MEDIA QUERIES
+ *
+ */
+
+@media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    section p {
+        margin-right: 0px;
+    }
+
+    .tracks-extra .description div:first-child {
+        width: 75%;
+        text-align: center;
+    }
+
+    .tracks-extra .description > div > img {
+        width: 250px;
+    }
+
+    #bonus .quote {
+        font-size: 2rem;
+    }
+
+    #bonus img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0px;
+    }
+
+    #splash h1 {
+        font-size: 60px;
+    }
+
+    .splash-txt-sub {
+        font-size: 24px;
+        margin-top: -5px;
+    }
+
+    .splash-placeholder {
+        display: none;
+    }
+
+    .splash-align-end {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 300px) {
 }
