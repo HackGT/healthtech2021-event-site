@@ -1,4 +1,4 @@
 git:
   remote: https://github.com/HackGT/healthtech2021-event-site.git
-  branch: master
+  branch: main
 target_port: 80
