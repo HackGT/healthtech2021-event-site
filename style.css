@@ -45,16 +45,16 @@ h3 {
 }
 
 a {
-    color: var(--anchor-color-light);
-    text-decoration: none;
+    color: var(--txt-color-light);
     font-weight: bold;
 }
 
 a:visited {
-    color: var(--anchor-color-light);
+    color: var(--txt-color-light);
 }
 
 a:hover {
+    color: var(--anchor-color-light);
 }
 
 a:active {
