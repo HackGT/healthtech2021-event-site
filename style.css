@@ -184,18 +184,6 @@ nav a:active {
 #register-btn a:active {
 }
 
-#home-left {
-    bottom: 0px;
-    width: 45%;
-    left: var(--push-to-edge);
-}
-
-#home-right {
-    bottom: 0px;
-    right: var(--push-to-edge);
-    width: 75%;
-}
-
 /*
  * ABOUT
  *
@@ -259,52 +247,6 @@ nav a:active {
     height: auto;
 }
 
-#tracks-left-1 {
-    top: 0px;
-    left: var(--push-to-edge);
-    width: 32%;
-    height: 100%;
-}
-
-#tracks-left-2 {
-    top: 0px;
-    left: var(--push-to-edge);
-    width: 10.6%;
-    height: 35%;
-}
-
-#mental-health-right-1 {
-    bottom: 0px;
-    right: var(--push-to-edge);
-    width: 55%;
-    height: 50%;
-}
-
-#mental-health-right-2-1 {
-    top: 0px;
-    right: var(--push-to-edge);
-    width: 66%;
-    height: 100%;
-}
-
-#mental-health-right-2-2 {
-    top: 99.9%;
-    right: var(--push-to-edge);
-    width: 28.6%;
-}
-
-#fitness-1 {
-    bottom: 0px;
-    left: var(--push-to-edge);
-    width: 40%;
-}
-
-#fitness-2 {
-    top: 0px;
-    left: var(--push-to-edge);
-    width: 36.5%
-}
-
 /*
  * SCHEDULE
  *
@@ -344,20 +286,6 @@ nav a:active {
 #faq .question {
     font-weight: bold;
     margin-bottom: 20px;
-}
-
-#faq-left-1 {
-    bottom: 0px;
-    left: var(--push-to-edge);
-    width: 29.65%;
-    height: 15%;
-}
-
-#faq-left-2 {
-    top: 0px;
-    left: var(--push-to-edge);
-    width: 61% !important;
-    height: 100% !important;
 }
 
 /*
@@ -423,4 +351,81 @@ footer .social ul {
 
 footer .social ul img {
     height: 35px;
+}
+
+/*
+ * SIDE DECOR
+ *
+ */
+
+#home-left {
+    bottom: 0px;
+    width: 45%;
+    left: var(--push-to-edge);
+}
+
+#home-right {
+    bottom: 0px;
+    right: var(--push-to-edge);
+    width: 75%;
+}
+
+#tracks-left-1 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 32%;
+    height: 100%;
+}
+
+#tracks-left-2 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 10.6%;
+    height: 35%;
+}
+
+#mental-health-right-1 {
+    bottom: 0px;
+    right: var(--push-to-edge);
+    width: 55%;
+    height: 50%;
+}
+
+#mental-health-right-2-1 {
+    top: 0px;
+    right: var(--push-to-edge);
+    width: 66%;
+    height: 100%;
+}
+
+#mental-health-right-2-2 {
+    top: 99.9%;
+    right: var(--push-to-edge);
+    width: 28.6%;
+}
+
+#fitness-1 {
+    bottom: 0px;
+    left: var(--push-to-edge);
+    width: 40%;
+}
+
+#fitness-2 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 36.5%;
+}
+
+#faq-left-1 {
+    bottom: 0px;
+    left: var(--push-to-edge);
+    width: 29.65%;
+    height: 15%;
+}
+
+#faq-left-2 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 61% !important;
+    height: 100% !important;
 }
