@@ -20,7 +20,6 @@ body {
 
     /* TODO remove this after testing */
     background: #10112e;
-    overflow: none;
 }
 
 /*
@@ -442,7 +441,7 @@ footer .social ul img {
     }
 
     .tracks-extra .description div:first-child {
-        width: 75%;
+        width: 100%;
         text-align: center;
     }
 
@@ -461,7 +460,7 @@ footer .social ul img {
 
 @media (max-width: 700px) {
     body {
-        margin: 0px;
+        margin: 0px 10%;
     }
 
     #splash h1 {
@@ -482,5 +481,38 @@ footer .social ul img {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
+    p {
+        font-size: 16px;
+    }
+
+    #splash h1 {
+        font-size: 48px;
+    }
+
+    .splash-txt-sub {
+        font-size: 20px;
+    }
+
+    .splash-txt-details {
+        font-size: 20px;
+    }
+
+    #register-btn {
+        font-size: 20px;
+    }
+
+    .tracks-extra h3 {
+        font-size: 2rem;
+    }
+
+    .tracks-extra .description > div > img,
+    #tracks .showcase > div > img {
+        width: 175px;
+        height: auto;
+    }
+
+    #bonus .quote {
+        font-size: 1.5rem;
+    }
 }
