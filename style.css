@@ -482,7 +482,7 @@ footer .social ul img {
 
 @media (max-width: 700px) {
     body {
-        margin: 0px 10%;
+        margin: 0px 10% !important;
     }
 
     #splash h1 {
