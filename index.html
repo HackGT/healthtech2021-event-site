@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- TODO insert preview meta tags
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:url" content="https://healthtech.hack.gt" />
+        <meta property="og:title" content="HealthTech 2021" />
+        <meta
+            property="og:description"
+            content="HackGT welcomes you to HealthTech, a Hackathon centered around the wellbeing of individuals"
+        />
+        <meta
+            property="og:image"
+            content="https://healthtech.hack.gt/assets/preview.png"
+        />
+        
+        <!-- favicon
         -->
-        <!-- TODO insert favicon
-        -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/starsHome.svg"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/starsHome.svg"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/starsHome.svg"
+        />
         <title>HealthTech 2021</title>
 
         <!-- fonts
         -->
-
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
@@ -47,11 +73,11 @@
         -->
         <nav>
             <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#tracks">tracks</a></li>
-                <li><a href="#schedule">schedule</a></li>
-                <li><a href="#faq">faq</a></li>
-                <li><a href="#bonus">icon</a></li>
+                <li><a data-name="about" href="#about">about</a></li>
+                <li><a data-name="tracks" href="#tracks">tracks</a></li>
+                <li><a data-name="schedule" href="#schedule">schedule</a></li>
+                <li><a data-name="faq" href="#faq">faq</a></li>
+                <li><a data-name="bonus" href="#bonus">&hearts;</a></li>
             </ul>
         </nav>
 
@@ -74,7 +100,11 @@
                 </div>
 
                 <div id="register-btn">
-                    <a href="https://registration.healthtech.hack.gt">Apply Now</a>
+                    <a
+                        href="https://registration.healthtech.hack.gt"
+                        target="_blank"
+                        >Apply Now</a
+                    >
                 </div>
             </div>
             <img class="o" id="home-left" src="./assets/home.png" />
@@ -122,7 +152,7 @@
                 </div>
             </div>
             <img class="o" id="tracks-left-1" src="./assets/4tracks.png" />
-                    </section>
+        </section>
 
         <section class="tracks-extra">
             <div class="description">
@@ -141,7 +171,7 @@
                     <img src="./assets/mentalHealth.png" />
                 </div>
             </div>
-            <img class="o" id="tracks-left-2" src="./assets/5fitness.png"/>
+            <img class="o" id="tracks-left-2" src="./assets/5fitness.png" />
 
             <img
                 class="o"
@@ -219,7 +249,7 @@
                     <img src="./assets/womensHealth.png" />
                 </div>
             </div>
-            <img class="o" id="fitness-1" src="./assets/9rural.png"/>
+            <img class="o" id="fitness-1" src="./assets/9rural.png" />
         </section>
         <section class="tracks-extra">
             <div class="description">
@@ -241,13 +271,17 @@
                     <img src="./assets/ruralHealth.png" />
                 </div>
             </div>
-            <img class="o" id="fitness-2" src="./assets/10women.png"/>
+            <img class="o" id="fitness-2" src="./assets/10women.png" />
         </section>
 
         <section id="schedule">
             <h1>schedule</h1>
             <div>coming soon</div>
-            <img class="o" id="schedule-right-1" src="./assets/11schedule.png"/>
+            <img
+                class="o"
+                id="schedule-right-1"
+                src="./assets/11schedule.png"
+            />
         </section>
 
         <section id="faq">
@@ -326,8 +360,8 @@
                     </p>
                 </li>
             </ul>
-            <img class="o" id="schedule-right-2" src="./assets/12faq.png"/>
-            <img class="o" id="faq-left-1" src="./assets/13faq.png"/>
+            <img class="o" id="schedule-right-2" src="./assets/12faq.png" />
+            <img class="o" id="faq-left-1" src="./assets/13faq.png" />
         </section>
 
         <section id="bonus">
@@ -343,7 +377,7 @@
                     <div>-- Hippocrates</div>
                 </div>
             </div>
-            <img class="o" id="faq-left-2" src="./assets/14quote.png"/>
+            <img class="o" id="faq-left-2" src="./assets/14quote.png" />
         </section>
 
         <footer>
@@ -382,9 +416,7 @@
                     </li>
                 </ul>
             </div>
-            <div>Made with love by the HackGT Team</div>
+            <div>Made with &hearts; by the HackGT Team</div>
         </footer>
-
-        <script src="./index.js"></script>
     </body>
 </html>

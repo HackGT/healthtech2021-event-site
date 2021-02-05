@@ -106,13 +106,27 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--txt-color-light);
+    position: relative;
 }
 
 nav a:visited {
     color: var(--txt-color-light);
 }
 
-nav a:hover {
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.1em;
+    bottom: 0;
+    left: 0;
+    background-color: var(--txt-color-light);
+    transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
 }
 
 nav a:active {
@@ -160,12 +174,19 @@ nav a:active {
     margin: 50px 10px;
     width: fit-content;
     font-size: 24px;
+    animation: animateHeart 5s infinite;
+    transition: transform 0.3s ease-out;
+}
+
+#register-btn:hover {
+    transform: scale(1.1);
 }
 
 #register-btn a {
     background: #68b6e5;
     padding: 10px 55px;
     border-radius: 10px;
+    color: var(--txt-color-dark);
     border: 3px solid;
 }
 
@@ -179,6 +200,7 @@ nav a:active {
 }
 
 #register-btn a:hover {
+    transform: scale(1.1);
 }
 
 #register-btn a:active {
@@ -514,5 +536,43 @@ footer .social ul img {
 
     #bonus .quote {
         font-size: 1.5rem;
+    }
+}
+
+/*
+ * Animations
+ *
+ */
+nav {
+    opacity: 0.3;
+    transition: opacity 0.1s ease-in;
+}
+
+nav:hover {
+    opacity: 1;
+}
+
+/* https://learnwithparam.com/blog/hearbeat-animation-using-css/ */
+@keyframes animateHeart {
+    0% {
+        transform: scale(0.8);
+    }
+    5% {
+        transform: scale(0.9);
+    }
+    10% {
+        transform: scale(0.8);
+    }
+    15% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(0.8);
     }
 }
