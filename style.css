@@ -8,6 +8,7 @@ body {
     --anchor-color-light: #68b6e5;
     --font-pri: "Roboto", sans-serif;
     --font-snd: "Roboto", sans-serif;
+    --push-to-edge: -12.5%;
 
     box-sizing: border-box;
     margin-left: 10%;
@@ -25,6 +26,17 @@ body {
  * BASE STYLES
  *
  */
+
+p,
+div,
+h1,
+h2,
+h3,
+a,
+li,
+ul {
+    z-index: 1000;
+}
 
 h1,
 h2,
@@ -53,6 +65,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 section p {
@@ -67,6 +80,11 @@ section p {
     font-weight: bold;
 }
 
+.o {
+    position: absolute;
+    z-index: 800;
+}
+
 /*
  * NAV
  *
@@ -77,6 +95,7 @@ nav {
     right: 5%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1100;
 }
 
 nav ul {
@@ -108,6 +127,7 @@ nav a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1000;
 }
 
 .splash-txt-sub {
@@ -164,6 +184,36 @@ nav a:active {
 #register-btn a:active {
 }
 
+#home-left {
+    bottom: 0px;
+    width: 45%;
+    left: var(--push-to-edge);
+}
+
+#home-right {
+    bottom: 0px;
+    right: var(--push-to-edge);
+    width: 75%;
+}
+
+/*
+ * ABOUT
+ *
+ */
+
+#about-right {
+    top: 0px;
+    right: var(--push-to-edge);
+    width: 75.1%;
+}
+
+#about-left {
+    bottom: 0px;
+    left: var(--push-to-edge);
+    width: 35%;
+    height: 75%;
+}
+
 /*
  * TRACKS
  *
@@ -190,7 +240,7 @@ nav a:active {
 }
 
 .tracks-extra h3 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
 }
 
 .tracks-extra .description {
@@ -209,6 +259,52 @@ nav a:active {
     height: auto;
 }
 
+#tracks-left-1 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 32%;
+    height: 100%;
+}
+
+#tracks-left-2 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 10.6%;
+    height: 35%;
+}
+
+#mental-health-right-1 {
+    bottom: 0px;
+    right: var(--push-to-edge);
+    width: 55%;
+    height: 50%;
+}
+
+#mental-health-right-2-1 {
+    top: 0px;
+    right: var(--push-to-edge);
+    width: 66%;
+    height: 100%;
+}
+
+#mental-health-right-2-2 {
+    top: 99.9%;
+    right: var(--push-to-edge);
+    width: 28.6%;
+}
+
+#fitness-1 {
+    bottom: 0px;
+    left: var(--push-to-edge);
+    width: 40%;
+}
+
+#fitness-2 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 36.5%
+}
+
 /*
  * SCHEDULE
  *
@@ -216,6 +312,18 @@ nav a:active {
 
 #schedule {
     text-align: center;
+}
+
+#schedule-right-1 {
+    bottom: 0px;
+    right: var(--push-to-edge);
+    width: 35%;
+}
+
+#schedule-right-2 {
+    top: 0px;
+    right: var(--push-to-edge);
+    width: 34.3%;
 }
 
 /*
@@ -226,6 +334,7 @@ nav a:active {
 #faq ul {
     list-style: none;
     padding-left: 0px;
+    margin-top: 0px;
 }
 
 #faq li {
@@ -235,6 +344,20 @@ nav a:active {
 #faq .question {
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+#faq-left-1 {
+    bottom: 0px;
+    left: var(--push-to-edge);
+    width: 29.65%;
+    height: 15%;
+}
+
+#faq-left-2 {
+    top: 0px;
+    left: var(--push-to-edge);
+    width: 61% !important;
+    height: 100% !important;
 }
 
 /*
@@ -263,7 +386,8 @@ nav a:active {
     font-size: 2.5rem;
 }
 
-#bonus .quote-img, #bonus .quote {
+#bonus .quote-img,
+#bonus .quote {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,4 +424,3 @@ footer .social ul {
 footer .social ul img {
     height: 35px;
 }
-
