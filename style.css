@@ -86,6 +86,22 @@ section p {
 }
 
 /*
+ * BANNER
+ *
+ */
+#banner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*
  * NAV
  *
  */
@@ -478,6 +494,7 @@ footer .social ul img {
     #bonus img {
         width: 250px;
     }
+
 }
 
 @media (max-width: 700px) {
@@ -536,6 +553,11 @@ footer .social ul img {
 
     #bonus .quote {
         font-size: 1.5rem;
+    }
+
+    #banner {
+        width: fit-content;
+        font-size: 13px;
     }
 }
 
